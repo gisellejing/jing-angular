@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "msjingnyc-angular": {
+    "jing-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/msjingnyc-angular",
+            "outputPath": "dist/jing-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "msjingnyc-angular:build"
+            "browserTarget": "jing-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "msjingnyc-angular:build:production"
+              "browserTarget": "jing-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "msjingnyc-angular:build"
+            "browserTarget": "jing-angular:build"
           }
         },
         "test": {
@@ -106,15 +106,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "msjingnyc-angular:serve"
+            "devServerTarget": "jing-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "msjingnyc-angular:serve:production"
+              "devServerTarget": "jing-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "msjingnyc-angular"
+  "defaultProject": "jing-angular"
 }
